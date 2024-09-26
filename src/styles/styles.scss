@@ -116,10 +116,11 @@ a {
 
   &__right-side {
     width: 50%;
-    padding: 0px 100px;
+    padding: 140px 0px 100px 100px;
     height: 100%;
     display: grid;
     align-content: center;
+    justify-content: right;
 
     &__form {
       background-color: white;
@@ -131,11 +132,11 @@ a {
         color: #042338;
         width: 100%;
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: 700;
       }
 
       input {
-        height: 3rem;
+        height: 3.5rem;
       }
 
       textarea {
@@ -145,10 +146,13 @@ a {
         // border-color: RED;
       }
 
-      // input,
-      // textarea {
-      //   border-radius: 10px;
-      // }
+      input,
+      textarea {
+        &::placeholder {
+          color: #042338;
+          font-weight: 700;
+        }
+      }
 
       &--button {
         button {
