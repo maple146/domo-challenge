@@ -3,8 +3,8 @@ import { Container } from "react-bootstrap";
 const Hero: React.FC = () => {
   return (
     <div className="hero">
-      <Container className="px-3 mx-auto d-flex">
-        <div className="hero__left-side col-6 grid">
+      <Container className="px-3 mx-auto d-flex row">
+        <div className="hero__left-side col-12 col-lg-6 grid">
           <div className="hero__left-side__title d-flex flex-column">
             <button type="button" className="btn btn-secondary">
               Welcome to Businezz X
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        <div className="hero__right-side">
+        <div className="hero__right-side col-12 col-lg-6">
           <div className="hero__right-side__background" />
           <form className="hero__right-side__form grid py-5 px-4">
             <div className="mb-4">
@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
               <h2>Get a free consultation</h2>
             </div>
             <div className="row">
-              <div className="mb-3 col-6">
+              <div className="mb-3 col-12 col-md-6">
                 <input
                   type="string"
                   className="form-control"
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
                   placeholder="Name"
                 />
               </div>
-              <div className="mb-3 col-6">
+              <div className="mb-3 col-12 col-md-6">
                 <input
                   type="email"
                   className="form-control"

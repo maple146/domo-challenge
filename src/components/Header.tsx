@@ -3,7 +3,7 @@ import Link from "next/link";
 const Header: React.FC = () => {
   return (
     <header className="d-flex justify-content-between align-items-md-center my-4 bg-white">
-      <div className="d-flex mx-3">
+      <div className="d-flex mx-1 mx-lg-3">
         <Link
           href="/"
           className="d-flex align-items-center text-dark text-decoration-none"
@@ -20,25 +20,57 @@ const Header: React.FC = () => {
             <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z" />
           </svg>
         </Link>
-        <div className="vr mx-3"></div>
-        <Link className="mx-3" href="/" target="_blank" rel="noopener">
-          Home
-        </Link>
-        <Link className="mx-3" href="/" target="_blank" rel="noopener">
-          About
-        </Link>
-        <Link className="mx-3" href="/" target="_blank" rel="noopener">
-          Pages
-        </Link>
-        <Link className="mx-3" href="/" target="_blank" rel="noopener">
-          Packages
-        </Link>
-        <Link className="mx-3" href="/" target="_blank" rel="noopener">
-          Contact
-        </Link>
-        <Link className="mx-3" href="/" target="_blank" rel="noopener">
-          Cart [0]
-        </Link>
+        <div className="vr mx-1 mx-lg-3"></div>
+        <div className="d-none d-md-block">
+          <Link
+            className="mx-1 mx-lg-3"
+            href="/"
+            target="_blank"
+            rel="noopener"
+          >
+            Home
+          </Link>
+          <Link
+            className="mx-1 mx-lg-3"
+            href="/"
+            target="_blank"
+            rel="noopener"
+          >
+            About
+          </Link>
+          <Link
+            className="mx-1 mx-lg-3"
+            href="/"
+            target="_blank"
+            rel="noopener"
+          >
+            Pages
+          </Link>
+          <Link
+            className="mx-1 mx-lg-3"
+            href="/"
+            target="_blank"
+            rel="noopener"
+          >
+            Packages
+          </Link>
+          <Link
+            className="mx-1 mx-lg-3"
+            href="/"
+            target="_blank"
+            rel="noopener"
+          >
+            Contact
+          </Link>
+          <Link
+            className="mx-1 mx-lg-3"
+            href="/"
+            target="_blank"
+            rel="noopener"
+          >
+            Cart [0]
+          </Link>
+        </div>
       </div>
 
       <button type="button" className="btn btn-primary">
@@ -49,3 +81,6 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+function useCheckIsDesktop(): { isDesktop: any } {
+  throw new Error("Function not implemented.");
+}

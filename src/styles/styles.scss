@@ -2,6 +2,12 @@ $success: #7952b3;
 
 @import "bootstrap/scss/bootstrap.scss";
 
+// * {
+//   background-color: black !important;
+//   color: red !important;
+//   border: 1px solid green !important;
+// }
+
 a {
   color: #082135;
   text-decoration: none;
@@ -12,6 +18,10 @@ a {
     color: #355063;
     text-decoration: underline;
     text-decoration-color: #355063;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: 0.8rem;
   }
 }
 
@@ -56,8 +66,26 @@ a {
     height: 100%;
   }
 
+  @media screen and (max-width: 576px) {
+    height: auto;
+  }
+
   &__left-side {
+    // border: 1px solid red;
+
     padding: 100px 100px 100px 0px;
+
+    @media screen and (max-width: 1200px) {
+      padding: 50px 50px 50px 0px;
+    }
+
+    @media screen and (max-width: 992px) {
+      padding: 0;
+    }
+
+    // @media screen and (max-width: 992px) {
+    //   padding: 100px;
+    // }
     height: 100%;
     display: grid;
     align-content: space-between;
@@ -74,10 +102,25 @@ a {
         font-size: 3.5rem;
         font-weight: 600;
 
+        @media screen and (max-width: 1400px) {
+          font-size: 3rem;
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 2.5rem;
+        }
+
         span {
           text-decoration: underline;
           text-decoration-color: #0097ff;
         }
+      }
+
+      @media screen and (max-width: 992px) {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
       }
     }
 
@@ -91,34 +134,99 @@ a {
         font-size: 1.5rem;
         font-weight: 600;
         margin-bottom: 48px;
+
+        @media screen and (max-width: 1200px) {
+          font-size: 1.2rem;
+        }
       }
 
       button {
         width: fit-content;
       }
+
+      @media screen and (max-width: 992px) {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+      }
     }
   }
 
   &__right-side {
-    background-image: url("/hero-bg.jpg");
+    background-image: url("/hero-bg-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
     height: 100%;
     display: grid;
     align-content: center;
-    justify-content: right;
-    padding: 100px 100px 100px 100px;
+    justify-content: center;
+    padding: 100px;
+
+    @media screen and (max-width: 1400px) {
+      padding: 50px;
+    }
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      padding: 0px;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 576px) {
+      background-image: none;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
 
     &__form {
       background-color: white;
       width: 100%;
 
+      @media screen and (max-width: 576px) {
+        color: blue;
+      }
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        justify-content: center;
+      }
+
       h2 {
         color: #042338;
+
+        @media screen and (max-width: 1400px) {
+          color: red;
+        }
+
+        @media screen and (max-width: 1200px) {
+          color: orange;
+        }
+
+        @media screen and (max-width: 992px) {
+          color: yellow;
+        }
+
+        @media screen and (max-width: 768px) {
+          color: green;
+        }
+
+        @media screen and (max-width: 576px) {
+          color: blue;
+        }
+
         width: 100%;
         font-size: 2rem;
         font-weight: 700;
+
+        @media screen and (max-width: 1200px) {
+          font-size: 1.7rem;
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 1.5rem;
+        }
       }
 
       input {
