@@ -4,6 +4,7 @@ import AppGuides from "@/components/AppGuides";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ExampleComponents from "@/components/ExampleComponents";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
@@ -14,18 +15,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container as="main" className="py-4 px-3 mx-auto">
+      <main>
+        <Container className="px-3 mx-auto">
+          <Header />
+        </Container>
+        {/* <Container className="py-4 px-3 mx-auto"> */}
+        <Hero />
+        {/* </Container> */}
+        <Container className="px-3 mx-auto">
+          <Footer />
+        </Container>
+      </main>
+      {/* <Container as="main" className="py-4 px-3 mx-auto">
         <Header />
-
-        <h1>Build Bootstrap with React</h1>
-
-        <ExampleComponents />
-
-        <hr className="col-1 my-5 mx-0" />
-
-        <AppGuides />
+        <Hero />
         <Footer />
-      </Container>
+      </Container> */}
     </>
   );
 }
