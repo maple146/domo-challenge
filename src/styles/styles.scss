@@ -3,5 +3,103 @@ $success: #7952b3;
 @import "bootstrap/scss/bootstrap.scss";
 
 body {
-  padding: 1.5rem;
+  // padding: 1.5rem;
+}
+
+// main {
+//   background: #022b41;
+// }
+
+a {
+  color: #082135;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: #355063;
+    text-decoration: underline;
+    text-decoration-color: #355063;
+  }
+}
+
+.btn-primary {
+  background-color: red;
+  border-radius: 32px;
+  color: #042338;
+  border-color: #042338;
+  background-color: white;
+  padding: 10px 20px;
+  font-weight: 700;
+  border-width: 2px;
+}
+
+.btn-secondary {
+  border-radius: 32px;
+  color: white;
+  border-color: #5f7b90;
+  background-color: transparent;
+  padding: 8px 16px;
+  border-width: 2px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hero {
+  height: 80vh;
+  align-content: space-between;
+  background: #022b41;
+
+  .container {
+    height: 100%;
+  }
+
+  &__cta {
+    // background: purple;
+    padding: 100px 100px 100px 0px;
+    height: 100%;
+    display: grid;
+    align-content: space-between;
+
+    border: 1px solid red;
+
+    &__title {
+      border: 1px solid yellow;
+
+      button {
+        width: fit-content;
+        margin-bottom: 16px;
+      }
+
+      h1 {
+        border: 1px solid green;
+        color: white;
+        width: 100%;
+        font-size: 3.5rem;
+        font-weight: 600;
+
+        span {
+          text-decoration: underline;
+          text-decoration-color: #0097ff;
+        }
+      }
+    }
+
+    &__button {
+      border-top: 1px solid rgba(95, 123, 144, 0.5);
+      padding-top: 24px;
+
+      h2 {
+        color: white;
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 48px;
+      }
+
+      button {
+        width: fit-content;
+      }
+    }
+  }
 }
