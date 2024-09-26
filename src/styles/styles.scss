@@ -24,7 +24,7 @@ a {
 }
 
 .btn-primary {
-  background-color: red;
+  // background-color: red;
   border-radius: 32px;
   color: #042338;
   border-color: #042338;
@@ -72,10 +72,10 @@ a {
     display: grid;
     align-content: space-between;
 
-    border: 1px solid red;
+    // border: 1px solid red;
 
     &__title {
-      border: 1px solid yellow;
+      // border: 1px solid yellow;
 
       button {
         width: fit-content;
@@ -83,7 +83,7 @@ a {
       }
 
       h1 {
-        border: 1px solid green;
+        // border: 1px solid green;
         color: white;
         width: 100%;
         font-size: 3.5rem;
@@ -115,18 +115,20 @@ a {
   }
 
   &__right-side {
+    background-image: url("/hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 50%;
-    padding: 140px 0px 100px 100px;
     height: 100%;
     display: grid;
     align-content: center;
     justify-content: right;
+    padding: 100px;
 
     &__form {
       background-color: white;
-      // height: 100px;
       width: 100%;
-      // padding-top: 6rem;
+      // padding: 100px;
 
       h2 {
         color: #042338;
@@ -141,9 +143,7 @@ a {
 
       textarea {
         height: 7rem;
-        // border-style: NONE;
         border-width: 1px;
-        // border-color: RED;
       }
 
       input,
@@ -161,7 +161,5 @@ a {
         }
       }
     }
-
-    border: 1px solid blue;
   }
 }

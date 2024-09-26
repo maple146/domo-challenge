@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button, Container } from "react-bootstrap";
 
 const Hero: React.FC = () => {
@@ -25,6 +26,32 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="hero__right-side">
+          <div className="hero__right-side__background">
+            {/* <Image
+              src={"/hero-bg-2.jpg"}
+              alt="Hero form background image"
+              objectFit="contain"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+            /> */}
+            {/* <Image
+              className="rounded-b-lg"
+              fill
+              src={"/hero-bg.jpg"}
+              alt="none"
+            /> */}
+          </div>
+          {/* <div className="test">Hola</div> */}
+          {/* <div style={{ width: "100%", height: "100%", position: "relative" }}>
+            <Image
+              alt="Mountains"
+              src={"/hero-bg.jpg"}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div> */}
           <form className="hero__right-side__form grid py-5 px-4">
             <div className="mb-4">
               <button type="button" className="btn btn-outline-secondary mb-2">
