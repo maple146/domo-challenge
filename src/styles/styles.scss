@@ -2,14 +2,6 @@ $success: #7952b3;
 
 @import "bootstrap/scss/bootstrap.scss";
 
-body {
-  // padding: 1.5rem;
-}
-
-// main {
-//   background: #022b41;
-// }
-
 a {
   color: #082135;
   text-decoration: none;
@@ -24,7 +16,6 @@ a {
 }
 
 .btn-primary {
-  // background-color: red;
   border-radius: 32px;
   color: #042338;
   border-color: #042338;
@@ -66,24 +57,18 @@ a {
   }
 
   &__left-side {
-    // background: purple;
     padding: 100px 100px 100px 0px;
     height: 100%;
     display: grid;
     align-content: space-between;
 
-    // border: 1px solid red;
-
     &__title {
-      // border: 1px solid yellow;
-
       button {
         width: fit-content;
         margin-bottom: 16px;
       }
 
       h1 {
-        // border: 1px solid green;
         color: white;
         width: 100%;
         font-size: 3.5rem;
@@ -128,7 +113,6 @@ a {
     &__form {
       background-color: white;
       width: 100%;
-      // padding: 100px;
 
       h2 {
         color: #042338;
